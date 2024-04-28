@@ -1,6 +1,6 @@
 import React from "react";
 
-const Add = () => {
+const Form = () => {
   const divStyle = {
     width: "fit-content",
   };
@@ -68,4 +68,4 @@ const Add = () => {
   );
 };
 
-export default Add;
+export default Form;
