@@ -4,13 +4,13 @@ const transactions = [
     date: "2020-01-06",
     description: "Movies",
     category: "Entertainment",
-    Amount: 2000,
+    amount: 2000,
   },
 ];
 
 const getNextId = (
   (id) => () =>
     ++id
-)(1);
+)(3);
 
 export { transactions, getNextId };

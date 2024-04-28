@@ -10,7 +10,7 @@ const Header = ({
   setDescription,
   category,
   setCategory,
-  handleSubmit,
+  onSetTransaction,
 }) => {
   return (
     <>
@@ -27,7 +27,7 @@ const Header = ({
         setCategory={setCategory}
         amount={amount}
         setAmount={setAmount}
-        handleSubmit={handleSubmit}
+        onSetTransaction={onSetTransaction}
       />
     </>
   );

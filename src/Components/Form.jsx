@@ -1,3 +1,5 @@
+import { getNextId } from "../assets/data";
+
 const Form = ({
   date,
   setDate,
@@ -7,12 +9,23 @@ const Form = ({
   setDescription,
   category,
   setCategory,
-  handleSubmit,
+  onSetTransaction,
 }) => {
   const divStyle = {
     width: "fit-content",
   };
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = {
+      id: getNextId(),
+      date: date,
+      description: description,
+      category: category,
+      amount: amount,
+    };
 
+    onSetTransaction(formData);
+  }
   return (
     <>
       <form onSubmit={handleSubmit}>

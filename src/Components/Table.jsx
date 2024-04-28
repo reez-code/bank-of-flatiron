@@ -1,29 +1,16 @@
 import React from "react";
 
-const Table = ({ formData }) => {
-  console.log(formData);
+const Table = ({ date, description, category, amount }) => {
   const divStyle = {
     borderWidth: "thick",
   };
   return (
-    <table className="table-auto" id="table">
-      <thead style={divStyle}>
-        <tr>
-          <th style={divStyle}>Date</th>
-          <th style={divStyle}>Description</th>
-          <th style={divStyle}>Category</th>
-          <th style={divStyle}>Amount</th>
-        </tr>
-      </thead>
-      <tbody style={divStyle}>
-        <tr>
-          <td style={divStyle}></td>
-          <td style={divStyle}></td>
-          <td style={divStyle}></td>
-          <td style={divStyle}></td>
-        </tr>
-      </tbody>
-    </table>
+    <tr>
+      <td style={divStyle}>{date}</td>
+      <td style={divStyle}>{description}</td>
+      <td style={divStyle}>{category}</td>
+      <td style={divStyle}>{amount}</td>
+    </tr>
   );
 };
 

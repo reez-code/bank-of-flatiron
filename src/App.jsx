@@ -2,30 +2,28 @@ import React, { useState } from "react";
 
 import "./App.css";
 import Header from "./Components/Header";
-import Table from "./Components/Table";
-import { transactions } from "./assets/data";
+import { transactions as transactionsArray } from "./assets/data";
+import Body from "./Components/Body";
 function App() {
+  const [transaction, setTransaction] = useState(transactionsArray);
   const [date, setDate] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [amount, setAmount] = useState("");
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const formData = {
-      id: 1,
-      date: date,
-      description: description,
-      category: category,
-      amount: amount,
-    };
-    setForm(formData);
+  // const tableContent = transaction.map((obj) => {
+  //   <Table
+  //     key={obj.id}
+  //     date={obj.date}
+  //     description={obj.description}
+  //     category={obj.category}
+  //     amount={obj.amount}
+  //   />;
+  // });
+  function addTransaction(transactionsObj) {
+    setTransaction([...transaction, transactionsObj]);
   }
 
-  const tableComponent = form.map((obj) => {
-    console.log(obj);
-  });
-  console.log(tableComponent);
   return (
     <>
       <Header
@@ -37,9 +35,9 @@ function App() {
         setCategory={setCategory}
         amount={amount}
         setAmount={setAmount}
-        handleSubmit={handleSubmit}
+        onSetTransaction={addTransaction}
       />
-      <Table formData={form} />
+      <Body transaction={transaction} />
     </>
   );
 }
