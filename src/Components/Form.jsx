@@ -7,16 +7,11 @@ const Form = ({
   setDescription,
   category,
   setCategory,
+  handleSubmit,
 }) => {
   const divStyle = {
     width: "fit-content",
   };
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const formData = [date, description, category, amount];
-    console.log(formData);
-  }
 
   return (
     <>

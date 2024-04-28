@@ -9,6 +9,12 @@ function App() {
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [amount, setAmount] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = [date, description, category, amount];
+    console.log(formData);
+  }
   return (
     <>
       <Header
@@ -20,6 +26,7 @@ function App() {
         setCategory={setCategory}
         amount={amount}
         setAmount={setAmount}
+        handleSubmit={handleSubmit}
       />
       <Table />
     </>
