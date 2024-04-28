@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import Table from "./Components/Table";
-
+import { transactions } from "./assets/data";
 function App() {
   const [date, setDate] = useState("");
   const [description, setDescription] = useState("");
@@ -12,9 +12,20 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const formData = [date, description, category, amount];
-    console.log(formData);
+    const formData = {
+      id: 1,
+      date: date,
+      description: description,
+      category: category,
+      amount: amount,
+    };
+    setForm(formData);
   }
+
+  const tableComponent = form.map((obj) => {
+    console.log(obj);
+  });
+  console.log(tableComponent);
   return (
     <>
       <Header
@@ -28,7 +39,7 @@ function App() {
         setAmount={setAmount}
         handleSubmit={handleSubmit}
       />
-      <Table />
+      <Table formData={form} />
     </>
   );
 }

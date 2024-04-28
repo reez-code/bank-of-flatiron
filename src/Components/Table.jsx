@@ -1,6 +1,7 @@
 import React from "react";
 
-const Table = () => {
+const Table = ({ formData }) => {
+  console.log(formData);
   const divStyle = {
     borderWidth: "thick",
   };
@@ -16,12 +17,10 @@ const Table = () => {
       </thead>
       <tbody style={divStyle}>
         <tr>
-          <td style={divStyle}>
-            The Sliding Mr. Bones (Next Stop, Pottersville)
-          </td>
-          <td style={divStyle}>Malcolm Lockyer</td>
-          <td style={divStyle}>1961</td>
-          <td style={divStyle}>random</td>
+          <td style={divStyle}></td>
+          <td style={divStyle}></td>
+          <td style={divStyle}></td>
+          <td style={divStyle}></td>
         </tr>
       </tbody>
     </table>
