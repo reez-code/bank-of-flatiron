@@ -5,7 +5,7 @@ const Table = () => {
     borderWidth: "thick",
   };
   return (
-    <table class="table-auto" id="table">
+    <table className="table-auto" id="table">
       <thead style={divStyle}>
         <tr>
           <th style={divStyle}>Date</th>
