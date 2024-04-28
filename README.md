@@ -25,7 +25,7 @@ Git clone git@github.com:reez-code/bank-of-flatiron.git
 
 # Live Link
 
-[Git](https://reez-code.github.io/phase-1-project/)
+[Git](https://reez-code.github.io/bank-of-flatiron/)
 
 ## Technologies used
 
