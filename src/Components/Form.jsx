@@ -1,18 +1,23 @@
-import React, { useState } from "react";
-
-const Form = () => {
+const Form = ({
+  date,
+  setDate,
+  amount,
+  setAmount,
+  description,
+  setDescription,
+  category,
+  setCategory,
+}) => {
   const divStyle = {
     width: "fit-content",
   };
 
-  const [date, setDate] = useState("");
-  const [description, setDescription] = useState("");
-  const [category, setCategory] = useState("");
-  const [amount, setAmount] = useState("");
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(event.target.date.value);
+    const formData = [date, description, category, amount];
+    console.log(formData);
   }
+
   return (
     <>
       <form onSubmit={handleSubmit}>
