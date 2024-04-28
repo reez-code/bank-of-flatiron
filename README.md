@@ -1,8 +1,39 @@
-# React + Vite
+# NEWS CAFE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Date, 2024/04/12
 
-Currently, two official plugins are available:
+#### By _Philip Gerald Otieno_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
+
+It's a website that contains latest news that is regularly updated users just have to scroll to read the news updates
+
+## Installation
+
+You use git clone to be able to download the documents in GitHub
+
+## Installation Requirements
+
+Git
+
+### Installation instruction
+
+```
+Git clone git@github.com:reez-code/bank-of-flatiron.git
+
+```
+
+# Live Link
+
+[Git](https://reez-code.github.io/phase-1-project/)
+
+## Technologies used
+
+HTML
+CSS
+Tailwind CSS
+React
+
+## Support and contact details
+
+github.com/reez-code
