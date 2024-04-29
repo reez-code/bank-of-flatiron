@@ -33,7 +33,7 @@ Git clone git@github.com:reez-code/bank-of-flatiron.git
 
 # Live Link
 
-[Git](https://reez-code.github.io/bank-of-flatiron/)
+[Bank-of-Flatiron](https://reez-code.github.io/bank-of-flatiron/)
 
 ## Technologies used
 
@@ -41,6 +41,7 @@ HTML
 CSS
 Tailwind CSS
 React
+Javascript
 
 ## Support and contact details
 
