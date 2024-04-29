@@ -6,7 +6,7 @@
 
 ## Description
 
-It's a website that that displays a list of your recent bank transactions, among other features.
+It's a website that displays a list of your recent bank transactions, among other features.
 
 As a user, you should be able to:
 
@@ -39,7 +39,7 @@ Git clone git@github.com:reez-code/bank-of-flatiron.git
 
 HTML
 CSS
-Tailwind CSS
+Tailwind
 React
 Javascript
 
