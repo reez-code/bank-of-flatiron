@@ -11,15 +11,6 @@ function App() {
   const [category, setCategory] = useState("");
   const [amount, setAmount] = useState("");
 
-  // const tableContent = transaction.map((obj) => {
-  //   <Table
-  //     key={obj.id}
-  //     date={obj.date}
-  //     description={obj.description}
-  //     category={obj.category}
-  //     amount={obj.amount}
-  //   />;
-  // });
   function addTransaction(transactionsObj) {
     setTransaction([...transaction, transactionsObj]);
   }
