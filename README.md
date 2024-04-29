@@ -33,7 +33,7 @@ Git clone git@github.com:reez-code/bank-of-flatiron.git
 
 # Live Link
 
-[Bank-of-Flatiron](https://reez-code.github.io/bank-of-flatiron/)
+[Bank-of-Flatiron](https://main--visionary-creponne-e82fdb.netlify.app/)
 
 ## Technologies used
 
