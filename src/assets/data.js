@@ -32,6 +32,6 @@ const transactions = [
 const getNextId = (
   (id) => () =>
     ++id
-)(3);
+)(4);
 
 export { transactions, getNextId };

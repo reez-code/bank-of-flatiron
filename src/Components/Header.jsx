@@ -1,6 +1,6 @@
 import React from "react";
-import Filter from "./Filter";
 import Form from "./Form";
+import Filter from "./Filter";
 const Header = ({
   date,
   setDate,
@@ -11,13 +11,15 @@ const Header = ({
   category,
   setCategory,
   onSetTransaction,
+  searchInput,
+  setSearchInput,
 }) => {
   return (
     <>
       <div className="heading">
-        <h1 id="header">The Royal Bank of Flatiron</h1>
+        <h1 id="header">The Royal Bank of Flatiron </h1>
       </div>
-      <Filter />
+      <Filter searchInput={searchInput} setSearchInput={setSearchInput} />
       <Form
         date={date}
         setDate={setDate}
