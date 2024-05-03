@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./App.css";
 import Header from "./Components/Header";
-import { transactions, transactions as transactionsArray } from "./assets/data";
+import { transactions as transactionsArray } from "./assets/data";
 import Body from "./Components/Body";
 
 function App() {
